@@ -1,5 +1,5 @@
 
-__author__ = 'Ваши Ф.И.О.'
+__author__ = 'niv'
 
 # Задача-1: Дано произвольное целое число, вывести самую большую цифру этого числа.
 # Например, дается x = 58375.
@@ -11,7 +11,21 @@ __author__ = 'Ваши Ф.И.О.'
 # * при желании и понимании решите задачу с применением цикла for.
 
 num = list(input())
-while 
+x = int(0)
+max1 = int(0)
+
+while x < len(num):
+    if num[x] >= str(max1):
+        max1 = num[x]
+        x += 1
+    else:
+        x += 1
+        continue
+   
+print('ВЫВОД: ', str(max1))
+
+
+
 
 
 
@@ -25,7 +39,7 @@ while
 a = int(input('Введите число а:'))
 b = int(input('Введите число b:'))
 a, b = b, a
-print(a \n b)
+print(a, b)
 
 
 
