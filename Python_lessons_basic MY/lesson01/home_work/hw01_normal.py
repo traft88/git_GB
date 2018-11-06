@@ -1,4 +1,4 @@
-
+ 
 __author__ = 'niv'
 
 # Задача-1: Дано произвольное целое число, вывести самую большую цифру этого числа.
@@ -55,7 +55,12 @@ a = int(input('Введите число а:'))
 b = int(input('Введите число b:'))
 c = int(input('Введите число с:'))
 import math
-x1 = (-b + math.sqrt(b**2 - 4 * a * c)) / 2 * a
-x1 = (-b - math.sqrt(b**2 - 4 * a * c)) / 2 * a
-print(x1)
-print(x2)
+d = b ** 2 - 4 * a * c
+
+if d < 0:
+	print('Решения нету')
+elif d == 0:
+	print('x1, x2 =', -b / 2 * a)
+else:
+	print('x1 = ', -b + math.sqrt(d)) / 2 * a)
+	print('x1 = ', -b - math.sqrt(d)) / 2 * a)
