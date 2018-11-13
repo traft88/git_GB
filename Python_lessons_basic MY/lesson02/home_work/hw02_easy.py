@@ -14,9 +14,9 @@
 # Подсказка: воспользоваться методом .format()
 
 fruits = ['яблоко', 'банан', 'киви', 'арбуз']
-i = 1
+i = int(0)
 while i < len(fruits):
-	print('{}. {:>30}'.format(i, fruits(i)))
+	print('{}. {:>30}'.format(i+1, fruits[i]))
 	i += 1
 
 
@@ -26,6 +26,7 @@ while i < len(fruits):
 
 vegetables = [“картофель”,  “тыква”, “яблоко”]
 fruits = [“яблоко”, “банан”, “киви”, “тыква”]
+
 
 
 
